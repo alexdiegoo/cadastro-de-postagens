@@ -1,1 +1,8 @@
 <h1>Postagens</h1>
+<a href="/cadastrar">Criar nova postagem</a>
+{{#each posts}}
+<h1>{{dataValues.titulo}}</h1>
+<p>{{dataValues.conteudo}}</p>
+<a href="/deletar/{{dataValues.id}}"><button>Apagar</button></a>
+<hr>
+{{/each}}
